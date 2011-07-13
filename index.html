@@ -1,0 +1,223 @@
+<!-- Localized -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ruby Hillo</title>
+
+
+<!--stylesheets- change to selected theme _purple,_blue,_green or _orange-->
+<link rel="stylesheet" type="text/css" href="css/style_purple.css" title="blue" media="screen" />
+<!-- <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" /> -->
+
+
+
+<!--import necessary js files-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/supersized.3.1.3.js"></script> -->
+<!-- <script type="text/javascript" src="js/setup.js"></script> -->
+<script type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+<script type="text/javascript" src="js/jScript.js"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script type="text/javascript" src="cufon/Quicksand_Book_400-Quicksand_Book_700.font.js"></script>
+
+		
+</head>
+
+
+<body>
+
+
+        
+     <!--content container-->
+	<div id="contentContainer">
+    	<div id="top"></div>
+        
+        	<!--start header-->
+            <div id="header">
+                 <div id="logo">
+                   <img src="images/ruby.png" style="position:absolute;top:12px;left:194px;">
+                   <a href="#"><h1 style="font-size:42px;color:#FFF;">RUBY HILLO</h1></a>
+                   <!-- <p class="slogan">your slogan</p> -->
+                 </div>
+            </div>
+            <!--end header-->
+        <div id="mid">
+        
+            
+        	<!--content 1 start-->
+        	<div id="content1" class="content">
+              
+                 <div class="headerDiv">
+                     <img src="images/div.png" alt="div header" />                   
+                  </div>
+                  
+                  <h1>PROXIMA REUNION:</h1>
+                  
+                  <!--start counter-->
+				<div id="countdown_dashboard">
+                    
+                  <!--days-->
+                  <div class="dashYr days_dash" style="margin-right:18.5px;"> 
+                        <div class="digit" style="margin-left:3px;">0</div>
+                        <div class="digit">1</div>
+                        <div class="digit">0</div> 
+                    	<span class="dash_title"  style="right: 16px;">dias</span>                    
+                  </div>
+         		
+                 <!--hrs-->
+             	  <div class="dash hours_dash" style="margin-right:18.5px;">
+                        <div class="digit" style="margin-left:3px;">0</div>
+                        <div class="digit">3</div>
+                  		<span class="dash_title" style="right: 6px;">horas</span>                  
+                  </div>
+                  
+        		  <!--min-->
+             	  <div class="dash minutes_dash">
+                        <div class="digit" style="margin-left:3px;">0</div>
+                        <div class="digit">2</div>
+                  		<span class="dash_title"  style="right: 6px;">minutos</span>                  
+                  </div>
+                  
+        		   <!--secs-->
+              		<div class="dash seconds_dash" style="float:right;">
+                        <div class="digit" style="margin-left:3px;">0</div>
+                        <div class="digit" style="b">0</div>
+                  		<span class="dash_title"  style="right: 6px;">segundos</span>                 
+                   </div>
+       		  </div>
+                <!--end counter-->
+                
+
+                
+
+                <p>
+                Nos juntamos cada otro Miércoles en Hermosillo, Sonora para platicar de Ruby. La ubicación es en Casa Nieves a las 7 PM.
+                
+                </p>
+                
+                <!--start notify field-->
+                <div id="notify" style="width:293px;margin:auto;">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                  
+                  
+                    <!-- <form action="php/submit-notify.php" method="post">
+                               <input type="text" name="emailNotify"  class="fieldNotify" id="emailNotify" value="Your e-mail" /> 
+                               <div style="float:left;"><input type="submit" value="SEND" id="submitNotify" class="sendNotify" /></div>
+                           </form> -->
+                    <div style="width:293px; height:20px; margin:10px auto;float:left;">
+                    	 	<p id="notifyProgress" class="notifyProgress"></p>
+                    </div>
+				</div>
+                <!--end notify field-->
+                  
+              </div>
+              <!--end content 1-->
+             
+             <!--start content 2-->
+             <div id="content2" class="content" style="display:none; margin:auto;">
+             
+             	<div class="headerDiv">
+                     <img src="images/div.png" alt="div header" />                   
+                </div>
+             
+             	<h1 id="sentConfirmTitle"> Have somethign to say...</h1>
+                <p id="sentConfirmMessage" style="width:100%; margin:8px 0 30px 0;">
+                	Send us a mail and we will get back to you in 48 hours.
+                   
+                </p>
+                 	 
+                  	<a style="width:100%; margin:5px 0 15px 0; text-align:center;" id="reload" class="link"  href="#">Reload form</a>
+                 
+                <!--start contact form-->
+                <div id="contactForm" class="contactForm" style="width:250px;margin:auto;">
+                      <!--start contact form -->
+                      <form action="php/submit-form.php" method="post">
+                      <p class="form">
+					  <input class="field" type="text" name="name" id="name" value="Name*" />
+                      
+                      <input class="field" type="text" name="email" id="email" value="E-mail*" />
+                      
+                      <input class="field" type="text" name="subject" id="subject" value="Subject" />
+                      
+                      </p>
+                      <p class="form"><textarea  class="tarea" rows="8" name="message" id="message" cols="0">Message*</textarea><br /></p>
+                     
+                      <div style="float:right; margin-bottom:15px"><input type="submit" value="SEND" class="sendForm" id="submit" /></div>
+                      
+                       </form>    
+                       <p id="formProgress" class="formProgress">*required</p>
+                <!--end contact form -->
+                </div>             
+             </div>
+             <!--end content 2-->
+              
+        </div>
+        <!--end mid-->
+
+        <!--start footer-->
+        <div id="footer">           
+            	<div style="width:412px; margin:auto;">
+                    <div id="footerDiv">
+                         <img src="images/div.png" alt="div footer" />                   
+                     </div>
+                     
+                     <style type="text/css" media="screen">
+                       .twtr-ft {
+                         display:none !important;
+                       }
+                     </style>
+                     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                     <script>
+                     new TWTR.Widget({
+                       version: 2,
+                       type: 'search',
+                       search: '#rubyhillo',
+                       interval: 6000,
+                       title: '',
+                       subject: '',
+                       width: 'auto',
+                       height: 300,
+                       theme: {
+                         shell: {
+                           background: 'transparent',
+                           color: '#000000'
+                         },
+                         tweets: {
+                           background: '#000000',
+                           color: '#ffffff',
+                           links: '#adadad'
+                         }
+                       },
+                       features: {
+                         scrollbar: true,
+                         loop: true,
+                         live: true,
+                         hashtags: true,
+                         timestamp: true,
+                         avatars: true,
+                         toptweets: true,
+                         behavior: 'default'
+                       }
+                     }).render().start();
+                     </script>
+                 </div>
+             </div>
+             <!--end footer-->
+             
+            
+      
+        <div id="bot"></div>
+
+	</div>
+    <!--content container-->
+  
+
+</body>
+</html>

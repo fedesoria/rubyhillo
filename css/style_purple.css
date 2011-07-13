@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* BASE THEME - YELLOW */
+
+/*reset all across browsers*/
+html, body, div, h1, h2, h3, ul, ol, li, dt, p, table, th, td { margin: 0; padding: 0; }
+img {border:none}
+body{width:100%; }
+html{width:100%; height:100%}
+
+
+/*CONTAINERS--------*/
+
+#contentContainer{width:502px; height:auto; overflow:hidden; margin:20px auto;position:relative;}
+#contentContainer #top{width:502px; height:36px; background: url(../images/b_top.png) top left no-repeat;}
+#contentContainer #mid{width:502px; height:auto; overflow:hidden; background: url(../images/b_mid.png) top left repeat-y;}
+#contentContainer #mid .content{width:412px; height:auto; overflow:auto; margin:auto;}
+#contentContainer #bot{width:502px; height:36px; background: url(../images/b_bot.png) top left no-repeat;}
+
+/*PAGE ELEMENTS-------------------------*/
+
+/*header*/
+#header{width:502px;height:auto; margin:auto; overflow:hidden; background: url(../images/b_mid.png) top left repeat-y; padding-top:20px;}
+#logo{width:412px; height:auto; margin:auto;}
+.headerDiv{width:412px; height:auto; margin:auto; padding-bottom:25px;}
+
+/*counter*/
+#countdown_dashboard {width:100%; height: 120px; margin-top:35px;}
+.dashYr {width: 115px; height: 80px; background: url(../images/flip_board_triple.png) no-repeat; float: left;position: relative;}
+.dashYr .digit {font-size:58px; font-weight:bold; float: left; width: 37px; height:80px; line-height:73px; text-align: center;  font-family: Arial, Helvetica, sans-serif;color: #fff; position: relative;padding-top:5px;}
+.dash {width: 80px; height: 80px; background:  url(../images/flip_board_double.png) no-repeat; float: left; margin-left: 0px; position: relative;}
+.dash .digit {font-size:58px; font-weight:bold;  float: left; width: 37px; height:80px; line-height:73px; text-align: center; font-family: Arial, Helvetica, sans-serif; color: #fff; position: relative; padding-top:5px;}
+.dash_title {position: absolute;display: block;bottom: -20px; font-family:Arial, Helvetica, sans-serif;font-size: 12px;color: #444444; text-transform:uppercase; letter-spacing:-1px;}
+
+
+/*progress bar*/
+#progressBar{height:37px; width:412px; overflow:hidden; margin-bottom:40px;}
+#barContainerLeft{float:left;width: 8px; height:37px; background:url(../images/bar_frame.png) left 0  no-repeat;}
+#barContainerRight{float:left;width: 403px; height:37px; background: url(../images/bar_frame.png) -8px 0  no-repeat;}
+#barLeft{float:left;width: 8px; height:35px; background: url(../images/bar_left.png) 0 0 no-repeat;z-index:2; margin-top:1px;}
+#barRight{float:left; width: 80%; height:35px; background: url(../images/bar.png) right 0  no-repeat;  margin-top:1px;}/*set width for non js users so that they see progress*/
+
+
+/*notify*/
+.fieldNotify{width:200px; height:37px; background: url(../images/notify_field.png) 0 0 no-repeat; border:none; line-height:37px; padding:0 10px 0 10px; margin:20px 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:12px;  color:#555555; float:left;}
+.fieldNotify:focus{background: url(../images/notify_field_focus.png) no-repeat; outline:none; color:#cccccc;}
+.notifyProgress{width:293px; height:20px; text-align:center;}
+
+/*button send notify*/
+.sendNotify{width:73px; height:37px; background:url(../images/buttons_notify.png) top left no-repeat; font-family: Arial, Helvetica, sans-serif; font-size:15px; color:#fff; border:none; outline:none; cursor:pointer; float:left; margin-top:20px;}
+.sendNotify:hover{background: url(../images/buttons_notify.png) 0 -39px no-repeat;}
+.sendNotify:active{ outline:none;}
+
+
+/*form*/
+.field{width:240px; height:30px; background:#333333; border:1px solid #111111; padding:0 5px 0 5px;margin:2px 10px 12px 0px; font-family: Arial, Helvetica, sans-serif; font-size:12px;  color:#666666;}
+.field:focus{background: #fff; outline:none; color:#d95880; border:1px solid #999999;}
+.tarea{ min-width:240px; height:120px; background:#333333;  border:1px solid #111111;  padding:8px 5px 0 5px; font-family:Arial, Helvetica, sans-serif; font-size:12px;  color:#666666; float:left; text-align:justify; margin:3px 0 0 0;}
+.tarea:focus{ background:#fff; border:1px solid #999999;  outline:none; color: #d95880;}
+.formProgress{margin-top:16px;}
+
+/*button send*/
+.sendForm{width:80px; height:36px; background:url(../images/buttons.png) 0 0 no-repeat; font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#fff; border:none; outline:none; cursor:pointer; margin-top:10px;}
+.sendForm:hover{background:url(../images/buttons.png)  0 -36px no-repeat;}
+.sendForm:active{ outline:none;}
+
+
+/*FOOTER-------------------------*/
+#footer{width:502px; margin:auto; overflow:hidden; background: url(../images/b_mid.png) top left repeat-y;}
+#footerDiv{width:412px; height:auto; margin:auto;}
+
+
+/*social icons*/
+.icon_holder{width:31px; height:31px;float:right; margin:5px 0 5px 0;}
+.icon_rollover {position:absolute;border:none;z-index:1;} 
+.icon_original {position:absolute; opacity:0.5;/*social icon initial opacity*/}
+
+/*links*/
+a.link{font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#d95880; float:right; text-decoration:none; outline:none; border:none; margin:14px 0 0 -8px;}
+a.link:hover{text-decoration:underline;}
+
+/*STYLES*/
+h1{ width:100%; font-family:'Quicksand Book'; font-size:16px; float:left; color:#cccccc; margin-bottom:20px; text-align:center; text-transform:uppercase;}
+p{font-family:Arial, Helvetica, sans-serif; font-size:13px; float:left; text-align:center; color:#666666;}
+p.slogan{ width:100%; font-family: Arial, Helvetica, sans-serif;  font-size:11px; margin:3px 0 5px 0; color:#666666;text-transform:uppercase;text-align:center; letter-spacing:5px;}
+p.counter{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#fff; margin:11px 0 0 -10px; position:absolute; z-index:5; width:412px; text-align:center;}
+p.form{width:auto;}
