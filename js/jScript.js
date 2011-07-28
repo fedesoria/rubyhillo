@@ -11,7 +11,7 @@ $(document).ready(function(){
 	//SET COUNTER DATE
 	$("#countdown_dashboard").countDown({
 		targetOffset: {
-			'day': 		(13 - currentTime.getDate()),
+			'day': 		(10 - currentTime.getDate()),
 			'month': 	0,
 			'year': 	0,
 			'hour': 	(18 - currentTime.getHours()),
