@@ -11,11 +11,11 @@ $(document).ready(function(){
 	//SET COUNTER DATE
 	$("#countdown_dashboard").countDown({
 		targetOffset: {
-			'day': 		(8 - currentTime.getDate()),
+			'day': 		(26 - currentTime.getDate()),
 			'month': 	0,
 			'year': 	0,
-			'hour': 	(18 - currentTime.getHours()),
-			'min': 		(60 - currentTime.getMinutes()),
+			'hour': 	(19 - currentTime.getHours()),
+			'min': 		(30 - currentTime.getMinutes()),
 			'sec': 		0
 		},
 		omitWeeks: true
