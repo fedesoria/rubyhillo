@@ -7,6 +7,8 @@ This is approved by me. DHH
 
 Pagina para http://hermosillorb.com
 
+I approve this commit
+
 Para editar solo entra al branch de `gh-pages` y edita el contenido:
  El texto se encuentra en index.html
  La fecha para el reloj se encuentra en `js/jScript.js` allí solo editas la siguiente parte
