@@ -3,6 +3,8 @@ rubyhillo
 
 Hackeando github
 
+This is approved by me. DHH
+
 Pagina para http://hermosillorb.com
 
 Para editar solo entra al branch de `gh-pages` y edita el contenido:
